@@ -26,3 +26,7 @@ def process_guess(game_state, guess): # Обрабатывает ввод бук
         return f"Ошибка! Буквы '{guess}' нет в слове."
     return f"Правильно! Буква '{guess}' есть в слове."
 
+def get_random_word(filename='words.txt'):
+    with open(filename, 'r', encoding = 'utf-8') as file:
+        words = file.readlines()
+    return random.choice(words).strip()
