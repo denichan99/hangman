@@ -1,3 +1,5 @@
+import random
+
 def initialize_game(word): # Инициализирует игру
     return {
         "word": word,
